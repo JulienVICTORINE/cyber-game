@@ -1,0 +1,101 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    background-color: #343a40;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 0px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+/*-- Le corps de la page --*/
+body{
+    padding: 0px;
+    margin: 0px;
+    color: #ddd;
+    background-color: #181818;
+   
+}
+.container{
+    margin-top: 170px;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    max-width: auto;
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.mail{
+    margin-top: 150px;
+}
+
+.form-check-label{
+    color: #ddd;
+}
+
+.form-text{
+    color: white;
+}
+
+.form-text:hover{
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+
+.btn{
+    margin-top: 10px;
+}
+
+.text{
+    margin-top: 50px;
+}

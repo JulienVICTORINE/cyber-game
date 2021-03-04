@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une réservation</title>
+    <link rel="stylesheet" href="style4.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <a href="file:///home/louise/Bureau/Exercices/Cyber_games/Login/index.html">Page de
+                        Connexion</a>
+                    <a href="file:///home/louise/Bureau/Exercices/Cyber_games/Tableau%20de%20bord/index(2).html">Tableau
+                        de bord</a>
+                    <a
+                        href="file:///home/louise/Bureau/Exercices/Cyber_games/Ajout%20de%20r%C3%A9servation/index3.html">Ajout
+                        de
+                        réservation</a>
+                    <a href="file:///home/louise/Bureau/Exercices/Cyber_games/Inscription/index.html">Inscription</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="content"></div>
+</head>
+
+<body class="background-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 contenu">
+                <div class="contenu_titre">
+                    <h2>Ajouter une réservation</h2>
+                </div>
+
+                <div class="contenu_texte">
+                    <p>Veuillez compléter le formulaire ci-dessous</p>
+                </div>
+
+                <form class="form">
+
+                    <!-- Nom de famille -->
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" class="form-control" id="nom" name="lastname" placeholder="Nom" required>
+                    </div>
+
+                    <!-- Prénom -->
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" class="form-control" id="prenom" name="firstname" placeholder="Prénom"
+                            required>
+                    </div>
+
+                    <!-- Date de réservation -->
+                    <div class="form-group">
+                        <label for="birthday">Date de réservation</label>
+                        <input type="date" class="form-control" id="birthday" name="birthdayInput">
+                    </div>
+
+                    <!-- Heure de réservation -->
+                    <div class="form-group">
+                        <label for="time-input">Heure de réservation</label>
+                        <input type="time" class="form-control" id="time-input">
+                    </div>
+
+                    <!-- Horaire de réservation -->
+                    <div class="form-group">
+                        <label for="time-input">Horaire de réservation</label>
+                        <select name="from" id="from">
+                            <option selected>Sélectionnez l'horaire</option>
+                            <optgroup>
+                                <option value="1">09:00</option>
+                                <option value="2">09:30</option>
+                                <option value="3">10:00</option>
+                                <option value="4">10:30</option>
+                                <option value="5">11:00</option>
+                            </optgroup>
+
+                            <optgroup>
+                                <option value="6">13:00</option>
+                                <option value="7">13:30</option>
+                                <option value="8">14:00</option>
+                                <option value="9">14:30</option>
+                                <option value="10">15:00</option>
+                                <option value="11">15:30</option>
+                                <option value="12">16:00</option>
+                                <option value="13">16:30</option>
+                            </optgroup>
+
+                        </select>
+
+                        <label for="to"> à : </label>
+                        <select name="to" id="to">
+                            <optgroup>
+                                <option value="14"></option>
+                                <option value="15">10:00</option>
+                                <option value="16">10:30</option>
+                                <option value="17">11:00</option>
+                                <option value="18">11:30</option>
+                                <option value="19">12:00</option>
+                            </optgroup>
+
+                            <optgroup>
+                                <option value="20">14:00</option>
+                                <option value="21">14:30</option>
+                                <option value="22">15:00</option>
+                                <option value="23">15:30</option>
+                                <option value="24">16:00</option>
+                                <option value="25">16:30</option>
+                                <option value="26">17:00</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Liste de tous les postes -->
+                    <div class="form-group">
+                        <label for="select">Sélectionner un poste</label>
+                        <select class="custom-select mr-sm-2" id="select">
+                            <option selected>Ouvrir la liste</option>
+                            <optgroup label="Gamer">
+                                <option value="1">G01</option>
+                                <option value="2">G02</option>
+                                <option value="3">G03</option>
+                            </optgroup>
+
+                            <optgroup label="Bureautique">
+                                <option value="4">B01</option>
+                                <option value="5">B02</option>
+                                <option value="6">B03</option>
+                            </optgroup>
+
+                            <optgroup label="Création de contenu">
+                                <option value="7">C01</option>
+                                <option value="8">C02</option>
+                                <option value="9">C03</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- La durée de l'utilisation du poste -->
+                    <div class="form-group">
+                        <label for="time">Durée d'utilisation</label>
+                        <select class="custom-select mr-sm-2" id="select">
+                            <option selected>Ouvrir la liste</option>
+                            <option value="1">1:00</option>
+                            <option value="2">1:30</option>
+                            <option value="3">2:00</option>
+                            <option value="4">2:30</option>
+                        </select>
+                    </div>
+
+
+
+                    <!-- Bouton pour valider la réservation -->
+                    <div class="button">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
