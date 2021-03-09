@@ -1,5 +1,6 @@
 # Projet_Cyber-Games
 Description du projet : Créer un outil de gestion qui permet à un cybercafé de gérer leurs postes informatiques
+
 Objectif : créer un outil de gestion d'un cyber-café
 
 # Equipe-projet
@@ -27,6 +28,8 @@ Si un utilisateur souhaite utiliser un ordinateur qui est disponible, il devra d
 
 Pour ajouter une réservation, l'utilisateur saisi son nom, son prénom, le jour de réservation, sélectionner un poste disponible, la durée dont laquelle la personne souhaite rester au cybercafé et le temps d'utilisation de la machine.
 
+Pour la réalisation dela partie du CRUD, je me suis porté volontaire pour le créer. IL faut créer les fonctionnalités qui permettent de prendre en compte l'ajout d'un autilisateur, la modification et la suppression ainsi que l'affichage des données.
+
 # Tâches
 On devra afficher une fonction qui permet d'afficher l'heure actuelle en utilisant le langage JavaScript
 
@@ -35,7 +38,7 @@ Couleurs : Bleu, Vert, Rouge, Noir
 
 # Outils utilisés
 - Framework : Bootstrap
-- Technologies : HTML, CSS
+- Technologies : HTML, CSS, PHP
 - Navigateur web : Google Chrome
 - Editeur de logiciel : Visual Studio Code
 - Versioning : GitHub
